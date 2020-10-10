@@ -1,0 +1,348 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+	font-size:10px;
+}
+/* https://materialdesignicons.com/*/
+body{
+	font-family:Roboto;
+	font-size:16px;
+}
+
+header .contenedor{
+	position:relative;
+	height:500px;
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+
+header{
+	width:100%;
+	background: url(../img/fondo.jpg);
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+}
+
+
+header .menu{
+	width: 100%;
+	text-align:right;
+	height:7.4rem;
+	position:fixed;
+	z-index:4;
+	transition:all .4s ease;
+
+}
+header .menu:hover{
+	
+	background-color:black;
+	opacity:.9;
+	height:7.4rem;
+	
+
+}
+header .menu .btn_login{
+	background: url(../img/usero.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	transition:all .2s ease;
+	height:10px;
+}
+header .menu .btn_login:hover{
+	background: url(../img/user.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+header .menu .btn_carrito{
+	background: url(../img/carto.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	transition:all .2s ease;
+	height:2px;
+}
+header .menu .btn_carrito:hover{
+	background: url(../img/cart.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size:cover;
+	
+}
+header .menu .nose,.btn_carrito, .btn_login{
+	color: #fff;
+	font-size:20px;
+	font-weight:200;
+	display:inline-block;
+	text-decoration:none;
+	margin:0px 1.14%;
+	position:relative;
+	padding:24px;
+	vertical-align:middle;
+	transition: all .2s ease;
+
+	
+}
+
+
+header .menu .nose:hover{
+	opacity:1;
+	border-radius:1.3px;
+	font-size:20.5px;
+	color:black;
+	background-color:white;
+	
+}
+.logi{
+	padding:0px;
+	margin:0px 0%;
+	vertical-align:middle;
+	float:left;
+    opacity:.85; 
+	margin-left:2%;
+	position:relative;
+}
+.logo{
+	width:260px;
+	vertical-align:top;
+	z-index:17;
+}
+.logi:hover{
+	opacity:1;
+}
+header .textos{
+	width: 100%;
+	color: #fff;
+	position:absolute;
+	text-align:center;
+	top:35%;
+	
+}
+header .textos .nombre{
+	font-size:3rem;
+	font-weight:300;
+	position:relative;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 50%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 1.4rem 2rem 1.6rem;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all .1s ease;
+}
+.webflow-style-input:hover {
+  border-radius: 2px;
+  padding: 2rem 3rem 2rem;
+  background: rgba(0, 0, 0, 0.85);
+}
+.webflow-style-input:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 0;
+  height: 3px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+  background-size: 500% auto;
+  animation: gradient 3s linear infinite;
+}
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #E8EDDF;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  font-family:Roboto;
+  font-weight:100;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: white;
+  opacity:.4;
+
+}
+.webflow-style-input button {
+  color: white;
+  height:25px;
+  width:25px;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  background:url(../img/blanca.png);
+  opacity:.5;
+  
+}
+.webflow-style-input button:hover {
+  background:url(../img/blanca.png);
+  opacity:1;
+ 
+  font-size:10px;
+  transition: all .3s ease;
+}
+
+.main{
+	background: url(../img/fo.png);
+	background-repeat:repeat;
+	
+}
+
+
+.main .acerca-de{
+	
+	width:100%;
+	height:500px;
+	position:relative;
+	max-width:1000px;
+	margin:auto;
+	overflow:visible;
+}
+
+
+
+.main .acerca-de .foto{
+	width: 50%;
+	height:30rem;
+	position:absolute;
+	left:7%;
+	top:-5rem;
+	z-index:0;
+	box-shadow: 2px 2px 35px rgba(0,0,0,.7);
+
+}
+.main .acerca-de img{
+	width:100%;
+	height:100%;
+	vertical-align:top;
+	
+
+}
+.main .acerca-de article{
+	background: #fff;
+	padding: 20px;
+	margin-right:30px;
+	width:40%;
+	position:relative;
+	z-index:1;
+	top:5.5%;
+	float:right;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.4);
+	
+
+}
+.main .acerca-de article h3{
+	font-size:37px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	
+
+}
+.main .acerca-de article p{
+	line-height: 28px;
+	margin-bottom:10px;
+	
+
+}
+
+.main .productos {
+	background:url(../img/cac.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center 200px;
+	width:100%;
+	height:600px;
+	position:relative;
+	
+}
+
+
+.main .productos .listapro {
+	width:90%;
+	margin:auto;
+	overflow:hidden;
+	
+}
+.main .productos .listapro li {
+	width:22%;
+	shape-margin:10px;
+	background-color:black;
+	display:inline-block;
+	z-index:99;
+	
+	
+}
+.main .productos .listapro img{
+	width:100%;
+	vertical-align:top;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
